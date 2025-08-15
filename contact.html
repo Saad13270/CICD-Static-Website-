@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Get In Touch for Your Next Project</title>
+    <meta name="description" content="Get in touch to discuss your web design and development project. Free consultation and competitive quotes available.">
+    <link rel="canonical" href="https://yourwebsite.com/contact.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav__logo">Portfolio</a>
+                
+                <ul class="nav__menu">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav__link">Services</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                <button class="nav__toggle" aria-expanded="false" aria-label="Open menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="nav__mobile">
+            <ul class="nav__mobile-menu">
+                <li class="nav__mobile-item">
+                    <a href="index.html" class="nav__mobile-link">Home</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="about.html" class="nav__mobile-link">About</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="services.html" class="nav__mobile-link">Services</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="contact.html" class="nav__mobile-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Let's Work Together</h1>
+                <p class="hero__subtitle">
+                    Ready to transform your digital presence? Get in touch and let's discuss your project
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2" style="gap: var(--space-12); align-items: flex-start;">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-6); color: var(--color-neutral-900);">Send Me a Message</h2>
+                        
+                        <form class="form" id="contact-form" novalidate>
+                            <div class="form__group">
+                                <label for="name" class="form__label">
+                                    Full Name <span style="color: var(--color-error);">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" class="form__input" required aria-describedby="name-error">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email" class="form__label">
+                                    Email Address <span style="color: var(--color-error);">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" class="form__input" required aria-describedby="email-error">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form__input">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="company" class="form__label">Company/Organization</label>
+                                <input type="text" id="company" name="company" class="form__input">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="subject" class="form__label">
+                                    Subject <span style="color: var(--color-error);">*</span>
+                                </label>
+                                <select id="subject" name="subject" class="form__select" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="web-design">Web Design</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="ui-ux-design">UI/UX Design</option>
+                                    <option value="e-commerce">E-commerce</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="consultation">Free Consultation</option>
+                                    <option value="maintenance">Website Maintenance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="budget" class="form__label">Project Budget</label>
+                                <select id="budget" name="budget" class="form__select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-2k">Under $2,000</option>
+                                    <option value="2k-5k">$2,000 - $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-plus">$25,000+</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="timeline" class="form__label">Project Timeline</label>
+                                <select id="timeline" name="timeline" class="form__select">
+                                    <option value="">When do you need this completed?</option>
+                                    <option value="asap">As soon as possible</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="flexible">I'm flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label">
+                                    Project Details <span style="color: var(--color-error);">*</span>
+                                </label>
+                                <textarea id="message" name="message" class="form__textarea" required 
+                                         placeholder="Tell me about your project, goals, and any specific requirements you have..."
+                                         aria-describedby="message-error"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                                Send Message
+                            </button>
+
+                            <p style="font-size: var(--font-size-sm); color: var(--color-neutral-600); margin-top: var(--space-4); text-align: center;">
+                                I typically respond within 24 hours. All consultations are free and confidential.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2 style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-6); color: var(--color-neutral-900);">Get In Touch</h2>
+                        
+                        <div style="margin-bottom: var(--space-8);">
+                            <p style="color: var(--color-neutral-600); line-height: var(--line-height-relaxed); margin-bottom: var(--space-6);">
+                                I'm always excited to hear about new projects and opportunities. Whether you have a specific 
+                                project in mind or just want to explore possibilities, I'd love to chat.
+                            </p>
+
+                            <div style="margin-bottom: var(--space-6);">
+                                <h3 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-3); color: var(--color-neutral-900);">Contact Information</h3>
+                                
+                                <div style="margin-bottom: var(--space-4);">
+                                    <strong style="color: var(--color-neutral-700);">Email:</strong><br>
+                                    <a href="mailto:hello@yourportfolio.com" style="color: var(--color-primary-600);">hello@yourportfolio.com</a>
+                                </div>
+
+                                <div style="margin-bottom: var(--space-4);">
+                                    <strong style="color: var(--color-neutral-700);">Phone:</strong><br>
+                                    <a href="tel:+1-555-123-4567" style="color: var(--color-primary-600);">+1 (555) 123-4567</a>
+                                </div>
+
+                                <div>
+                                    <strong style="color: var(--color-neutral-700);">Location:</strong><br>
+                                    <span style="color: var(--color-neutral-600);">San Francisco, CA, USA</span><br>
+                                    <span style="color: var(--color-neutral-600);">Available for remote work worldwide</span>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: var(--space-8);">
+                                <h3 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-3); color: var(--color-neutral-900);">Business Hours</h3>
+                                <div style="color: var(--color-neutral-600);">
+                                    <div style="margin-bottom: var(--space-1);">Monday - Friday: 9:00 AM - 6:00 PM PST</div>
+                                    <div style="margin-bottom: var(--space-1);">Saturday: 10:00 AM - 2:00 PM PST</div>
+                                    <div>Sunday: Closed</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-4); color: var(--color-neutral-900);">Follow Me</h3>
+                                <div class="footer__social" style="justify-content: flex-start;">
+                                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                        <span style="font-size: 18px;">💼</span>
+                                    </a>
+                                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                                        <span style="font-size: 18px;">🐦</span>
+                                    </a>
+                                    <a href="#" class="footer__social-link" aria-label="GitHub">
+                                        <span style="font-size: 18px;">💻</span>
+                                    </a>
+                                    <a href="#" class="footer__social-link" aria-label="Dribbble">
+                                        <span style="font-size: 18px;">🎨</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section section--gray">
+            <div class="container">
+                <h2 style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-6); color: var(--color-neutral-900); text-align: center;">Find Me</h2>
+                
+                <!-- Placeholder Map -->
+                <div style="width: 100%; height: 400px; background: var(--color-neutral-200); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-neutral-300);">
+                    <div style="text-align: center; color: var(--color-neutral-600);">
+                        <div style="font-size: 3rem; margin-bottom: var(--space-4);">📍</div>
+                        <div style="font-size: var(--font-size-lg); font-weight: var(--font-weight-medium); margin-bottom: var(--space-2);">San Francisco, CA</div>
+                        <div style="font-size: var(--font-size-sm);">Interactive map would be embedded here</div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: var(--space-6);">
+                    <p style="color: var(--color-neutral-600);">
+                        Based in San Francisco but available for remote work with clients worldwide. 
+                        Let's schedule a video call to discuss your project!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Common Questions</h2>
+                    <p class="section__subtitle">Quick answers to questions you might have</p>
+                </div>
+
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <button class="accordion__trigger" aria-expanded="false">
+                                <span>How quickly can you start my project?</span>
+                                <span class="accordion__icon" style="font-size: var(--font-size-lg);">↓</span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__body">
+                                    I typically have a 1-2 week lead time for new projects, depending on my current workload. 
+                                    Rush projects can sometimes be accommodated with a priority fee. I'll give you an exact 
+                                    start date during our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__trigger" aria-expanded="false">
+                                <span>Do you offer free consultations?</span>
+                                <span class="accordion__icon" style="font-size: var(--font-size-lg);">↓</span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__body">
+                                    Yes! I offer free 30-minute consultations for all potential projects. This gives us 
+                                    time to discuss your goals, timeline, and budget, and for me to provide initial 
+                                    recommendations and a project estimate.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__trigger" aria-expanded="false">
+                                <span>What information should I include in my message?</span>
+                                <span class="accordion__icon" style="font-size: var(--font-size-lg);">↓</span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__body">
+                                    Please include details about your business, project goals, target audience, desired 
+                                    timeline, and approximate budget. If you have examples of websites or designs you 
+                                    like, that's also very helpful. The more information you provide, the better I 
+                                    can understand your needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <button class="accordion__trigger" aria-expanded="false">
+                                <span>Can we meet in person or do you work remotely?</span>
+                                <span class="accordion__icon" style="font-size: var(--font-size-lg);">↓</span>
+                            </button>
+                            <div class="accordion__content">
+                                <div class="accordion__body">
+                                    I'm happy to meet in person if you're in the San Francisco Bay Area. For clients 
+                                    elsewhere, I work entirely remotely using video calls, screen sharing, and modern 
+                                    collaboration tools. Many of my best client relationships have been fully remote!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div>
+                    <div class="footer__brand">Portfolio</div>
+                    <p class="footer__description">
+                        Creating beautiful, functional digital experiences that help businesses grow and succeed online.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <span style="font-size: 18px;">💼</span>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <span style="font-size: 18px;">🐦</span>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="GitHub">
+                            <span style="font-size: 18px;">💻</span>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Dribbble">
+                            <span style="font-size: 18px;">🎨</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="services.html" class="footer__link">Web Design</a></li>
+                        <li><a href="services.html" class="footer__link">Development</a></li>
+                        <li><a href="services.html" class="footer__link">UI/UX Design</a></li>
+                        <li><a href="services.html" class="footer__link">Branding</a></li>
+                        <li><a href="services.html" class="footer__link">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Professional Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+

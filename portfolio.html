@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Professional Web Design & Development</title>
+    <meta name="description" content="Explore my portfolio of web design and development projects, showcasing creative solutions for various industries.">
+    <link rel="canonical" href="https://yourwebsite.com/portfolio.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav__logo">Portfolio</a>
+                
+                <ul class="nav__menu">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav__link">Services</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                <button class="nav__toggle" aria-expanded="false" aria-label="Open menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="nav__mobile">
+            <ul class="nav__mobile-menu">
+                <li class="nav__mobile-item">
+                    <a href="index.html" class="nav__mobile-link">Home</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="about.html" class="nav__mobile-link">About</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="services.html" class="nav__mobile-link">Services</a>
+                </li>
+                <li class="nav__mobile-item">
+                    <a href="contact.html" class="nav__mobile-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">My Portfolio</h1>
+                <p class="hero__subtitle">
+                    A collection of projects showcasing my expertise in web design, development, and user experience
+                </p>
+            </div>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="grid grid--3">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item card" data-category="web ecommerce" style="transition: all var(--transition-base);">
+                        <img src="assets/img/portfolio-1.jpg" alt="TechStore E-commerce Platform" class="card__image" loading="lazy">
+                        <div class="card__content">
+                            <div class="tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Web Design</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <h3 class="card__title">TechStore E-commerce Platform</h3>
+                            <p class="card__description">
+                                Modern online electronics store with seamless shopping experience, integrated payment gateway, and responsive design.
+                            </p>
+                            <div class="card__footer">
+                                <button class="btn btn--outline btn--sm" data-modal="modal-1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item card" data-category="ui mobile" style="transition: all var(--transition-base);">
+                        <img src="assets/img/portfolio-2.jpg" alt="FitTracker Mobile App" class="card__image" loading="lazy">
+                        <div class="card__content">
+                            <div class="tags">
+                                <span class="tag">Mobile App</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Figma</span>
+                            </div>
+                            <h3 class="card__title">FitTracker Mobile App</h3>
+                            <p class="card__description">
+                                Fitness tracking application with intuitive interface, progress visualization, and social features for motivation.
+                            </p>
+                            <div class="card__footer">
+                                <button class="btn btn--outline btn--sm" data-modal="modal-2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item card" data-category="branding web" style="transition: all var(--transition-base);">
+                        <img src="assets/img/portfolio-3.jpg" alt="GreenTech Corporate Website" class="card__image" loading="lazy">
+                        <div class="card__content">
+                            <div class="tags">
+                                <span class="tag">Branding</span>
+                                <span class="tag">Corporate</span>
+                                <span class="tag">WordPress</span>
+                            </div>
+                            <h3 class="card__title">GreenTech Corporate Website</h3>
+                            <p class="card__description">
+                                Professional corporate website with strong brand identity, clear messaging, and lead generation focus.
+                            </p>
+                            <div class="card__footer">
+                                <button class="btn btn--outline btn--sm" data-modal="modal-3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item card" data-category="ui web" style="transition: all var(--transition-base);">
+                        <img src="assets/img/portfolio-4.jpg" alt="Dashboard Analytics Platform" class="card__image" loading="lazy">
+                        <div class="card__content">
+                            <div class="tags">
+                                <span class="tag">Dashboard</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Vue.js</span>
+                            </div>
+                            <h3 class="card__title">Analytics Dashboard</h3>
+                            <p class="card__description">
+                                Complex data visualization platform with interactive charts, real-time updates, and customizable widgets.
+                            </p>
+                            <div class="card__footer">
+                                <button class="btn btn--outline btn--sm" data-modal="modal-4">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item card" data-category="branding" style="transition: all var(--transition-base);">
+                        <img src="assets/img/portfolio-5.jpg" alt="Cafe Luna Brand Identity" class="card__image" loading="lazy">
+                        <div class="card__content">
+                            <div class="tags">
+                                <span class="tag">Brand Identity</span>
+                                <span class="tag">Logo Design</span>
+                                <span class="tag">Print</span>
+                            </div>
+                            <h3 class="card__title">Cafe Luna Brand Identity</h3>
+                            <p class="card__description">
+                                Complete brand identity system including logo, typography, color palette, and marketing materials.
+                            </p>
+                            <div class="card__footer">
+                                <button class="btn btn--outline btn--sm" data-modal="modal-5">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item card" data-category="web ecommerce" style="transition: all var(--transition-base);">
+                        <img src="assets/img/portfolio-6.jpg" alt="Fashion Boutique Online Store" class="card__image" loading="lazy">
+                        <div class="card__content">
+                            <div class="tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Fashion</span>
+                                <span class="tag">Shopify</span>
+                            </div>
+                            <h3 class="card__title">Fashion Boutique Store</h3>
+                            <p class="card__description">
+                                Elegant fashion e-commerce site with advanced filtering, wishlist functionality, and seamless checkout.
+                            </p>
+                            <div class="card__footer">
+                                <button class="btn btn--outline btn--sm" data-modal="modal-6">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section--gray">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section__title">Like What You See?</h2>
+                    <p class="section__subtitle">
+                        Let's discuss your project and create something amazing together
+                    </p>
+                    <div style="margin-top: var(--space-8);">
+                        <a href="contact.html" class="btn btn--primary btn--lg">Start Your Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals for Portfolio Details -->
+    <div id="modal-1" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <img src="assets/img/portfolio-1.jpg" alt="TechStore Project" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-6);" loading="lazy">
+            <h2 style="margin-bottom: var(--space-4);">TechStore E-commerce Platform</h2>
+            <div class="tags" style="margin-bottom: var(--space-4);">
+                <span class="tag">E-commerce</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+            </div>
+            <p style="margin-bottom: var(--space-6); color: var(--color-neutral-600); line-height: var(--line-height-relaxed);">
+                A comprehensive e-commerce solution for an electronics retailer, featuring advanced product filtering, 
+                user reviews, shopping cart functionality, and secure payment processing. The platform supports 
+                multiple payment gateways and provides an intuitive admin dashboard for inventory management.
+            </p>
+            <h3 style="margin-bottom: var(--space-3);">Key Features:</h3>
+            <ul style="margin-bottom: var(--space-6); padding-left: var(--space-5);">
+                <li>Responsive design for all devices</li>
+                <li>Advanced search and filtering</li>
+                <li>User account management</li>
+                <li>Shopping cart and wishlist</li>
+                <li>Secure payment gateway integration</li>
+                <li>Admin dashboard for inventory management</li>
+            </ul>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                <a href="#" class="btn btn--primary">Live Demo</a>
+                <a href="#" class="btn btn--outline">View Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <img src="assets/img/portfolio-2.jpg" alt="FitTracker App" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-6);" loading="lazy">
+            <h2 style="margin-bottom: var(--space-4);">FitTracker Mobile App</h2>
+            <div class="tags" style="margin-bottom: var(--space-4);">
+                <span class="tag">Mobile App</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Prototyping</span>
+            </div>
+            <p style="margin-bottom: var(--space-6); color: var(--color-neutral-600); line-height: var(--line-height-relaxed);">
+                A comprehensive fitness tracking application designed to motivate users through gamification and social features. 
+                The app includes workout planning, progress tracking, nutrition logging, and community challenges.
+            </p>
+            <h3 style="margin-bottom: var(--space-3);">Design Highlights:</h3>
+            <ul style="margin-bottom: var(--space-6); padding-left: var(--space-5);">
+                <li>Intuitive navigation and user flow</li>
+                <li>Motivational progress visualizations</li>
+                <li>Dark and light theme options</li>
+                <li>Accessibility-focused design</li>
+                <li>Interactive prototypes and user testing</li>
+            </ul>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                <a href="#" class="btn btn--primary">View Prototype</a>
+                <a href="#" class="btn btn--outline">Design System</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional modals would follow similar pattern for modal-3, modal-4, modal-5, modal-6 -->
+    <div id="modal-3" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <img src="assets/img/portfolio-3.jpg" alt="GreenTech Website" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-6);" loading="lazy">
+            <h2 style="margin-bottom: var(--space-4);">GreenTech Corporate Website</h2>
+            <div class="tags" style="margin-bottom: var(--space-4);">
+                <span class="tag">Corporate</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">Branding</span>
+            </div>
+            <p style="margin-bottom: var(--space-6); color: var(--color-neutral-600); line-height: var(--line-height-relaxed);">
+                Professional corporate website for a green technology company, featuring clean design, clear messaging about sustainability, and lead generation forms. Built with custom WordPress theme and optimized for search engines.
+            </p>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                <a href="#" class="btn btn--primary">Visit Website</a>
+                <a href="#" class="btn btn--outline">Case Study</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <img src="assets/img/portfolio-4.jpg" alt="Analytics Dashboard" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-6);" loading="lazy">
+            <h2 style="margin-bottom: var(--space-4);">Analytics Dashboard Platform</h2>
+            <div class="tags" style="margin-bottom: var(--space-4);">
+                <span class="tag">Dashboard</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">D3.js</span>
+            </div>
+            <p style="margin-bottom: var(--space-6); color: var(--color-neutral-600); line-height: var(--line-height-relaxed);">
+                Complex data visualization platform with real-time analytics, customizable widgets, and interactive charts. Designed for business intelligence and data-driven decision making.
+            </p>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                <a href="#" class="btn btn--primary">Live Demo</a>
+                <a href="#" class="btn btn--outline">Technical Details</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-5" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <img src="assets/img/portfolio-5.jpg" alt="Cafe Luna Branding" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-6);" loading="lazy">
+            <h2 style="margin-bottom: var(--space-4);">Cafe Luna Brand Identity</h2>
+            <div class="tags" style="margin-bottom: var(--space-4);">
+                <span class="tag">Brand Identity</span>
+                <span class="tag">Logo Design</span>
+                <span class="tag">Print Design</span>
+            </div>
+            <p style="margin-bottom: var(--space-6); color: var(--color-neutral-600); line-height: var(--line-height-relaxed);">
+                Complete brand identity system for a local coffee shop, including logo design, color palette, typography, business cards, menu design, and signage guidelines.
+            </p>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                <a href="#" class="btn btn--primary">Brand Guidelines</a>
+                <a href="#" class="btn btn--outline">Design Process</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-6" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal">&times;</button>
+            <img src="assets/img/portfolio-6.jpg" alt="Fashion Boutique" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--space-6);" loading="lazy">
+            <h2 style="margin-bottom: var(--space-4);">Fashion Boutique Online Store</h2>
+            <div class="tags" style="margin-bottom: var(--space-4);">
+                <span class="tag">E-commerce</span>
+                <span class="tag">Shopify</span>
+                <span class="tag">Fashion</span>
+            </div>
+            <p style="margin-bottom: var(--space-6); color: var(--color-neutral-600); line-height: var(--line-height-relaxed);">
+                Elegant fashion e-commerce website with advanced filtering, size guides, customer reviews, and seamless checkout experience. Custom Shopify theme with performance optimizations.
+            </p>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                <a href="#" class="btn btn--primary">Visit Store</a>
+                <a href="#" class="btn btn--outline">Performance Report</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div>
+                    <div class="footer__brand">Portfolio</div>
+                    <p class="footer__description">
+                        Creating beautiful, functional digital experiences that help businesses grow and succeed online.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <span style="font-size: 18px;">💼</span>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <span style="font-size: 18px;">🐦</span>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="GitHub">
+                            <span style="font-size: 18px;">💻</span>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Dribbble">
+                            <span style="font-size: 18px;">🎨</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="services.html" class="footer__link">Web Design</a></li>
+                        <li><a href="services.html" class="footer__link">Development</a></li>
+                        <li><a href="services.html" class="footer__link">UI/UX Design</a></li>
+                        <li><a href="services.html" class="footer__link">Branding</a></li>
+                        <li><a href="services.html" class="footer__link">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Professional Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
